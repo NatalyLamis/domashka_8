@@ -1,0 +1,171 @@
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;500;700&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+[class*="__container"]{
+    max-width: 1270px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+header{
+    background: url("../img/bg_header.png") center/cover no-repeat;
+    background-color: black;
+}
+.header__container{
+    padding-top: 330px;
+    padding-bottom: 100px;
+}
+.header__text{
+    max-width: 605px;
+    color: #E5E5E5;
+    font-size: 12px;
+    line-height: 1.67;
+    font-weight: 300;
+}
+.header__text>*:not(:last-child){
+    margin-bottom: 15px;
+}
+.header__title{
+    color: #F8F9FA;
+    font-size: 25px;
+    line-height: 1.6;
+    font-weight: 700;
+}
+.header__caption{
+    max-width: 499px;
+}
+main{
+    background: linear-gradient(115deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 67%, rgba(48,86,211,0.08) 67%),
+    linear-gradient(115deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 62%, rgba(48,86,211,0.08) 62%),
+    #F4F7FF;
+    font-family: Inter, sans-serif;
+}
+.main__container{
+    padding-top: 81px;
+    padding-bottom: 83px;
+}
+.main__text{
+    max-width: 570px;
+    font-size: 16px;
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 64px;
+    padding-bottom: 63px;
+    margin-right: 180px;
+}
+.main__product_image{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main__text>*{
+    margin-bottom: 15px;
+}
+.main__price{
+    color: #3056D3;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 600;
+}
+.main__title{
+    color: #212B36;
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+.main__description{
+    color: #637381;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+.main__button{
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 10px 30px;
+    background-color: #3056D3;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.main__button:hover{
+    background-color: #aecce5;
+    color: #061f6f;
+}
+.main__button:active{
+    background-color: #90057db3;
+    color: #FFFFFF;
+}
+.main__text>*:last-child{
+    margin-bottom: 0;
+}
+footer{
+    font-family: "Inter", sans-serif;
+    background: rgb(18,56,3);
+    background: linear-gradient(105deg, rgba(144, 5, 125, 0.702) 8%, rgba(3, 19, 62, 0.7) 65%, rgba(8, 28, 1, 0.7) 100%), url("../img/bg_footer.avif") center/cover no-repeat;
+    background-attachment: fixed;
+}
+.footer__container{
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.footer__title{
+    color: #212B36;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.08;
+    margin-bottom: 45px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.footer__title:hover{
+    color:black;
+    background-color: #adbcc9;
+    margin-left: 20px;
+    transform: scale(1.2);
+}
+.footer__list{
+    color: #637381;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+}
+.footer__list:not(:last-child){
+    margin-bottom: 60px;
+}
+.footer__list li:not(:last-child){
+    margin-bottom: 18px;
+}
+.footer__list li{
+    min-height: 20px;
+}
+.footer__list li::before{
+    content: "";
+    padding-right: 30px;
+}
+.dot li::before{
+    padding-right: 20px;
+    background: url("../img/marks/dot.png") 0 5px no-repeat;
+}
+.bluecircle li::before{
+    background: url("../img/marks/checkmark-circle.png") 0 0 no-repeat;
+}
+.greencircle li::before{
+    background: url("../img/marks/checkmark-circle-green.png") 0 0 no-repeat;
+}
+.redcircle li::before{
+    background: url("../img/marks/cross-circle.png") 0 0 no-repeat;
+}
+.arrow li::before{
+    background: url("../img/marks/arrow-right.png") 0 0 no-repeat;
+}
+.star li::before{
+    background: url("../img/marks/star.png") 0 0 no-repeat;
+}
+.footer__list li:hover{
+    color: #d5e1eb;
+}
